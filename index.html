@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Calculadora - Javascript</title>
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h2>Calculadora Simples - JavaScript</h2>
+        <div id="inputs">
+            <input id="num-one" name="num-one" type="text">
+            <input id="two-one" name="two-one" type="text">
+        </div>
+        <div id="equacao">
+            <input checked id="box1" name="sign-area" value="add" type="radio"><b>+</b>
+            <input id="box1" name="sign-area" value="add" type="radio"><b>-</b>
+            <input id="box1" name="sign-area" value="add" type="radio"><b>*</b>
+            <input id="box1" name="sign-area" value="add" type="radio"><b>/</b>
+        </div>
+        <div class="botao">
+            <button onclick="outcome()">Calcular</button>
+            <h1 id="resultArea"></h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
