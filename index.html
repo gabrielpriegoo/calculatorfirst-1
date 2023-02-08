@@ -10,31 +10,50 @@
     <!--Link FONTE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div id="wrapper">
-        <h2>Calculadora Simples - JavaScript</h2>
-        <div id="inputs">
-            <input id="num-one" name="num-one" type="text">
-            <input id="two-one" name="two-one" type="text">
-        </div>
+    <div id="container">
+        
+        <form class="calc-main">
+            <h3>Calculadora | JavaScript</h3>
+            <div class="form-input">
+                <div class="form-control">
+                    <label for="nume-one">Primeiro Número:</label>
+                    <input type="text" name="num-one" id="num-one" placeholder="Números sem , ou .">
+                </div>
+                <div class="form-control">
+                    <label for="nume-two">Segundo Número:</label>
+                    <input type="text" name="num-two" id="num-two" placeholder="Números sem , ou .">
+                </div>
+            </div>
+        </form>
+
         <div id="equacao">
             <input checked id="box1" name="sign-area" value="add" type="radio"><b>+</b>
             <input id="box1" name="sign-area" value="add" type="radio"><b>-</b>
             <input id="box1" name="sign-area" value="add" type="radio"><b>*</b>
             <input id="box1" name="sign-area" value="add" type="radio"><b>/</b>
-        </div>
+        
         <div class="botao">
             <button onclick="outcome()">Calcular</button>
             <h1 id="resultArea"></h1>
         </div>
+        </div>
+        
     </div>
 
     <script src="script.js"></script>
     
 </body>
 </html>
+
+<!-- <div id="equacao">
+    <input checked id="box1" name="sign-area" value="add" type="radio"><b>+</b>
+    <input id="box1" name="sign-area" value="add" type="radio"><b>-</b>
+    <input id="box1" name="sign-area" value="add" type="radio"><b>*</b>
+    <input id="box1" name="sign-area" value="add" type="radio"><b>/</b>
+</div> -->
